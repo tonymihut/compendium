@@ -2,12 +2,14 @@
 const limit = process.argv[ 2 ]
 
 function fibb( count, current = 1, previous = 0 ) {
-  console.log( current );
-  if ( !count ) {
-    return
-  } else {
-    return fibb( count - 1, current + previous, current )
-  }
+  doSomething( current );
+  return count ?
+    fibb( count - 1, current + previous, current ) :
+    current
+}
+
+function doSomething( value ) {
+  console.log( value );
 }
 
 fibb( limit )
