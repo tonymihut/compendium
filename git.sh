@@ -30,3 +30,9 @@ git branch -m <new-name> # Rename curent branch to <new-name>
 git branch -m <old-name>:<new-name> # Rename <old-name> branch to <new-name>
 git push origin :<old-name> <new-name> # Delete <old-name> on remote and push <new-name>
 git push origin -u <new-name> # Reset upstream to track <new-name>
+
+# Setting a new upstream
+git remote rm origin
+git remote add origin 'new@origin.com:url/project.git'
+git config master.remote origin
+git config master.merge refs/head/master
