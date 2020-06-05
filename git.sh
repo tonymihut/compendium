@@ -36,3 +36,10 @@ git remote rm origin
 git remote add origin 'new@origin.com:url/project.git'
 git config master.remote origin
 git config master.merge refs/head/master
+
+# Git settings
+## Local
+git config user.email me@awesome.worldwide # Set email address to use on commits
+
+## Global
+git config --global core.editor code # Set vscode as default editor used by git, substitute "code" for preffered editor but keep in mind the value used must be present in PATH otherwise it will default to VIM!! OMG! :q enter
