@@ -24,6 +24,9 @@ git log -<number> # Show a log of the last <number> commits
 git push -u origin <branch> # Push and set upstream <branch> to track curent branch
 git push -u origin <localBranch>:<remoteBranch> # Push <localBrach> and set upstream to call it <remoteBranch>
 
+# Merging
+git pull origin <branch> -s recursive -X theirs/ours # Merge origin branch using recursive strategy and resolving conflicts to "theirs" or "ours"
+
 # Branching
 ## Renaming
 git branch -m <new-name> # Rename curent branch to <new-name>
