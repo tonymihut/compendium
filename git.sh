@@ -12,8 +12,12 @@ git stash clear # Delete all stash entries
 git --fixup <head> # Do a fixup commit over <head>
 git commit --amend # Amend last commit (if it wasnt pushed to remote yet)
 git commit --amend --no-edit # Amend last commit (if it wasnt pushed to remote yet) witout editing the commit message
+
 ## Staging
 git add -i # Perform interactive staging
+
+## Chery pick
+git cherry-pick <commit>
 
 # Logging
 git log # Show a detail list of commits
