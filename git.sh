@@ -7,6 +7,7 @@ git stash --include-untracked # Stash changes and include untracked files
 git stash list # Show a list of stashes
 git stash apply stash@{<index>} # Apply the stash from specific <index> position
 git stash clear # Delete all stash entries
+git stash show stash@{<index>} # Show stash at specific <index> position
 
 # Committing
 git --fixup <head> # Do a fixup commit over <head>
