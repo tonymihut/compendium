@@ -50,3 +50,4 @@ git config user.email me@awesome.worldwide # Set email address to use on commits
 
 ## Global
 git config --global core.editor "code --wait" # Set vscode as default editor used by git, substitute "code" for preffered editor but keep in mind the value used must be present in PATH otherwise it will default to VIM!! OMG! :q enter
+git config --global --edit ## Open global settings in editor
