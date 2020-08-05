@@ -24,6 +24,7 @@ git cherry-pick <commit>
 git log # Show a detail list of commits
 git log --oneline # Show a one line list of commits
 git log -<number> # Show a log of the last <number> commits
+git rev-parse <--short> HEAD<~n> # Show the full(or --short) hash of the latest(or HEAD-~n) commit
 
 # Pushing
 git push -u origin <branch> # Push and set upstream <branch> to track curent branch
