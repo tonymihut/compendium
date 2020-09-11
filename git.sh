@@ -44,6 +44,8 @@ git pull origin <branch> -s recursive -X theirs/ours # Merge origin branch using
 ## Renaming
 git branch -m <new-name> # Rename curent branch to <new-name>
 git branch -m <old-name>:<new-name> # Rename <old-name> branch to <new-name>
+git branch -d <branch> # Delete <branch> if it hasn't been pushed to remote
+git brand -D <branch> # Force delete <branch> regardless of push and merge status
 git push origin :<old-name> <new-name> # Delete <old-name> on remote and push <new-name>
 git push origin -u <new-name> # Reset upstream to track <new-name>
 
