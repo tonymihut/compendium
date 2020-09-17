@@ -49,6 +49,11 @@ git brand -D <branch> # Force delete <branch> regardless of push and merge statu
 git push origin :<old-name> <new-name> # Delete <old-name> on remote and push <new-name>
 git push origin -u <new-name> # Reset upstream to track <new-name>
 
+## Reseting
+## ! the --hard flag wipes everything after the <hash>
+git reset --hard origin/<branch> # Reset current branch HEAD to the tip of <branch>
+git reset --hard <hash> # Reset current branch to <hash>
+
 # Setting a new upstream
 git remote rm origin
 git remote add origin 'new@origin.com:url/project.git'
