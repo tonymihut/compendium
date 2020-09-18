@@ -6,6 +6,7 @@ git checkout <branch> # Checkout to <branch>
 git checout -b <branch> # Create and checkout to <branch>
 git checkout <hash> # Checkout to commit <hash>
 git checkout <hash> path/to/file.xt path/to/file2.xt # Checkout only file(s) 'file.xt', 'file2.xt' to commit <hash>
+git checkout stash@<index> <file1> <file2> # Checkout only file1 and file2 from stash at <index>
 
 # Stashing
 git stash save "<message>" # Stash with <message>
