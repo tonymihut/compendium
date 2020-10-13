@@ -62,6 +62,12 @@ git config master.remote origin
 git config master.merge refs/head/master
 
 # Git settings
+## General
+git config key1 value # Set key1 to value in local config
+git config key1.key2 value # Set key1.key2 to value in local config
+git config --unset key1 # Remove key1 value from local config
+git config --global [...] # Make [...] changes in global config instead of local
+
 ## Local
 git config user.email me@awesome.worldwide # Set email address to use on commits
 
