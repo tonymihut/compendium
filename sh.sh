@@ -27,3 +27,14 @@ top
 ### -f -> watch file
 ### -n -> number of lines to show
 tail
+
+## SSH
+### Generate SSH key
+ssh-keygen -t rsa -b 4096 -C "example@email.com"
+
+### Add the jey to agent
+eval `ssh-agent`
+ssh-add ../path/to/key.rsa # adding -K flag will store it on the Apple keychain
+
+### SCP
+scp <file> <user>@<ip>:/<targetDir> # copy <file. to <targetDir> as <user> on machine at <ip>
