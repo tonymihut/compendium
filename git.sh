@@ -55,11 +55,15 @@ git push origin -u <new-name> # Reset upstream to track <new-name>
 git reset --hard origin/<branch> # Reset current branch HEAD to the tip of <branch>
 git reset --hard <hash> # Reset current branch to <hash>
 
-# Setting a new upstream
+# Edit upstream
+## Set new upstream
 git remote rm origin
 git remote add origin 'new@origin.com:url/project.git'
 git config master.remote origin
 git config master.merge refs/head/master
+
+## Change upstream url
+git remote set-url origin <copy-link-here>.
 
 # Git settings
 ## General
