@@ -5,6 +5,9 @@
 ### -h -> human readable, 150MB vs 150000KB
 ### -s -> summary, show directory results leaving out each file individual file report
 du -hs <folder>
+### Filesystem disk usage
+### -h -> human readable, 150MB vs 150000KB
+df -h
 
 ## Search by text match
 ### Find <query> in <file>
@@ -21,6 +24,11 @@ pbcopy < <file>
 ## Processes
 ### Show running processes 
 top
+
+## Memory
+### Show system memory
+### -m -> display in mebibytes
+free -m
 
 ## Misc
 ### Display last part of a file
