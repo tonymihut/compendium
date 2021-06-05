@@ -18,7 +18,7 @@ git stash clear # Delete all stash entries
 git stash show stash@<index> # Show stash at specific <index> position
 
 # Committing
-git --fixup <head> # Do a fixup commit over <head>
+git commit --fixup <head> # Do a fixup commit over <head>
 git commit --amend # Amend last commit (if it wasnt pushed to remote yet)
 git commit --amend --no-edit # Amend last commit (if it wasnt pushed to remote yet) witout editing the commit message
 
