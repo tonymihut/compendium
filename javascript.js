@@ -36,11 +36,13 @@ const fetchData = (param) => {
 };
 
 /**
+ * handlePromise
+ *
  * A function that wraps a promise in a try-catch block and returns the outcome
  *
- * @param {Function} promiseCallback - A function that wraps and returns the target promise
+ * @param {Function} promiseCallback A function that wraps and returns the target promise
  *
- * @returns {Array} - An array containing the outcome, with the following structure => [result, error]
+ * @returns {Array} An array containing the outcome, with the following structure => [result, error]
  */
 async function handlePromise(promiseCallback) {
   try {
@@ -49,6 +51,36 @@ async function handlePromise(promiseCallback) {
   } catch (error) {
     console.log("Internal standard error handling goes here");
     return [null, error];
+  }
+}
+
+/** Alternative implementation that returns an object instead of an array */
+/**
+ * @typedef {Object} PromiseOutcome
+ * @property {} error - Error outcome, defined if the promise rejected, 'null' otherwise
+ * @property {} result - Error flag, defined if the promise resolved, 'null' otherwise
+ */
+/**
+ * handlePromiseAlternative
+ *
+ * A function that wraps a promise in a try-catch block and returns the outcome
+ *
+ * @param {Function} promiseCallback A function that wraps and returns the target promise
+ *
+ * @returns {PromiseOutcome} An object containing the outcome, with the following structure => {result, error}
+ */
+async function handlePromiseAlternative(promiseCallback) {
+  const outcome = {
+    error: null,
+    result: null,
+  };
+
+  try {
+    const result = await promiseCallback();
+    return { ...outcome, result };
+  } catch (error) {
+    console.log("Internal standard error handling goes here");
+    return { ...outcome, error };
   }
 }
 
