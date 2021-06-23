@@ -47,3 +47,8 @@ ssh-add ../path/to/key.rsa # adding -K flag will store it on the Apple keychain
 ### SCP
 scp <file> <user>@<ip>:/<targetDir> # copy <file. to <targetDir> as <user> on machine at <ip>
 scp [options] <file> <user>@<ip>:/<targetDir> # copy <file. to <targetDir> as <user> on machine at <ip>, using [options] (-r recurive, * for entire pwd content, etc)
+
+## Network
+### List processes running on <PORT>
+
+lsof -i:<PORT>
