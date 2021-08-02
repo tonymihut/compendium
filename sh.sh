@@ -36,6 +36,13 @@ free -m
 ### -n -> number of lines to show
 tail
 
+### Display who is logged in
+### -b also displays last system boot
+who
+
+### Display last system reboots
+last reboot
+
 ## SSH
 ### Generate SSH key
 ssh-keygen -t rsa -b 4096 -C "example@email.com"
