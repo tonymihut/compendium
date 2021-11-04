@@ -16,6 +16,7 @@ git stash apply stash@<index> # Apply the stash from specific <index> position
 git stash drop stash@<index> # Delete stash entry from <index> position
 git stash clear # Delete all stash entries
 git stash show stash@<index> # Show stash at specific <index> position
+git stash push -m "<message>" path/to/file1.ext path/to/file2.ext # Stash file1 and file2 with <message>
 
 # Committing
 git commit --fixup <head> # Do a fixup commit over <head>
