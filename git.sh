@@ -64,7 +64,7 @@ git config master.remote origin
 git config master.merge refs/head/master
 
 ## Change upstream url
-git remote set-url origin <copy-link-here>.
+git remote set-url origin <copy-link-here>
 
 # Git settings
 ## General
