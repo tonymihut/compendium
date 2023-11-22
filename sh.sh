@@ -44,12 +44,12 @@ who
 last reboot
 
 ## SSH
-### Generate SSH key
+### Generate SSH key, cd into ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "example@email.com"
 
-### Add the jey to agent
+### Add the key to agent
 eval `ssh-agent`
-ssh-add ../path/to/key.rsa # adding -K flag will store it on the Apple keychain
+ssh-add ~/.ssh/your_new_key # adding -K flag will store it on the Apple keychain
 
 ### SCP
 scp <file> <user>@<ip>:/<targetDir> # copy <file. to <targetDir> as <user> on machine at <ip>
